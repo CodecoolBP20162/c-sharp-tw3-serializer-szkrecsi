@@ -37,6 +37,8 @@
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnFirst = new System.Windows.Forms.Button();
+            this.btnLast = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -107,19 +109,40 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(188, 225);
+            this.btnSave.BackColor = System.Drawing.Color.LightCyan;
+            this.btnSave.Location = new System.Drawing.Point(188, 243);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.Location = new System.Drawing.Point(25, 259);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.Size = new System.Drawing.Size(75, 23);
+            this.btnFirst.TabIndex = 9;
+            this.btnFirst.Text = "First";
+            this.btnFirst.UseVisualStyleBackColor = true;
+            // 
+            // btnLast
+            // 
+            this.btnLast.Location = new System.Drawing.Point(105, 259);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.Size = new System.Drawing.Size(75, 23);
+            this.btnLast.TabIndex = 10;
+            this.btnLast.Text = "Last";
+            this.btnLast.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 294);
+            this.Controls.Add(this.btnLast);
+            this.Controls.Add(this.btnFirst);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrevious);
@@ -147,6 +170,8 @@
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnFirst;
+        private System.Windows.Forms.Button btnLast;
     }
 }
 
