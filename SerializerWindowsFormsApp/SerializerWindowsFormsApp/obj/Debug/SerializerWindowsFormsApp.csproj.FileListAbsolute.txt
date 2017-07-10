@@ -1,0 +1,9 @@
+C:\Users\szkrecsi\Documents\Visual Studio 2017\Projects\c-sharp-tw3-serializer-szkrecsi\SerializerWindowsFormsApp\SerializerWindowsFormsApp\bin\Debug\SerializerWindowsFormsApp.exe.config
+C:\Users\szkrecsi\Documents\Visual Studio 2017\Projects\c-sharp-tw3-serializer-szkrecsi\SerializerWindowsFormsApp\SerializerWindowsFormsApp\bin\Debug\SerializerWindowsFormsApp.exe
+C:\Users\szkrecsi\Documents\Visual Studio 2017\Projects\c-sharp-tw3-serializer-szkrecsi\SerializerWindowsFormsApp\SerializerWindowsFormsApp\bin\Debug\SerializerWindowsFormsApp.pdb
+C:\Users\szkrecsi\Documents\Visual Studio 2017\Projects\c-sharp-tw3-serializer-szkrecsi\SerializerWindowsFormsApp\SerializerWindowsFormsApp\obj\Debug\SerializerWindowsFormsApp.csprojResolveAssemblyReference.cache
+C:\Users\szkrecsi\Documents\Visual Studio 2017\Projects\c-sharp-tw3-serializer-szkrecsi\SerializerWindowsFormsApp\SerializerWindowsFormsApp\obj\Debug\SerializerWindowsFormsApp.Form1.resources
+C:\Users\szkrecsi\Documents\Visual Studio 2017\Projects\c-sharp-tw3-serializer-szkrecsi\SerializerWindowsFormsApp\SerializerWindowsFormsApp\obj\Debug\SerializerWindowsFormsApp.Properties.Resources.resources
+C:\Users\szkrecsi\Documents\Visual Studio 2017\Projects\c-sharp-tw3-serializer-szkrecsi\SerializerWindowsFormsApp\SerializerWindowsFormsApp\obj\Debug\SerializerWindowsFormsApp.csproj.GenerateResource.Cache
+C:\Users\szkrecsi\Documents\Visual Studio 2017\Projects\c-sharp-tw3-serializer-szkrecsi\SerializerWindowsFormsApp\SerializerWindowsFormsApp\obj\Debug\SerializerWindowsFormsApp.exe
+C:\Users\szkrecsi\Documents\Visual Studio 2017\Projects\c-sharp-tw3-serializer-szkrecsi\SerializerWindowsFormsApp\SerializerWindowsFormsApp\obj\Debug\SerializerWindowsFormsApp.pdb
