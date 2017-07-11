@@ -18,10 +18,10 @@ namespace SerializerWindowsFormsApp
             DateTime recordingDate = DateTime.Now;
             Person person = new Person(txtName.Text, txtAddress.Text, txtPhone.Text, recordingDate);
             string outputFileName = "person" + Person.serialNumber + ".dat";
-            MessageBox.Show(outputFileName);
+            //MessageBox.Show(outputFileName);
             person.Serialize(outputFileName);
             listOfPeople.Add(person);
-            MessageBox.Show(listOfPeople.IndexOf(person).ToString());
+            //MessageBox.Show(listOfPeople.IndexOf(person).ToString());
         }
     }
 }
