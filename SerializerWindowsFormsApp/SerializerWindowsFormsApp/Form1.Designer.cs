@@ -61,7 +61,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(25, 52);
+            this.txtName.Location = new System.Drawing.Point(24, 52);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(238, 20);
             this.txtName.TabIndex = 3;
@@ -97,6 +97,7 @@
             this.btnPrevious.TabIndex = 6;
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnNext
             // 
@@ -106,6 +107,7 @@
             this.btnNext.TabIndex = 7;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnSave
             // 
@@ -126,6 +128,7 @@
             this.btnFirst.TabIndex = 9;
             this.btnFirst.Text = "First";
             this.btnFirst.UseVisualStyleBackColor = true;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // btnLast
             // 
@@ -135,6 +138,7 @@
             this.btnLast.TabIndex = 10;
             this.btnLast.Text = "Last";
             this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // Form1
             // 

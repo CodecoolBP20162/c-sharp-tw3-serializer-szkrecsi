@@ -2,17 +2,17 @@
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System.Collections.Generic;
 
 namespace SerializerWindowsFormsApp
 {
-
     [Serializable]
     public class Person : IDeserializationCallback
     {
-        private string name;
-        private string address;
-        private string phoneNumber;
-        public DateTime recordingDate;
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string PhoneNumber { get; set; }
+        public DateTime RecordingDate { get; set; }
         [NonSerialized]
         public static int serialNumber = 0;
 
@@ -20,10 +20,10 @@ namespace SerializerWindowsFormsApp
 
         public Person(string name, string address, string phoneNumber, DateTime recordingDate)
         {
-            this.name = name;
-            this.address = address;
-            this.phoneNumber = phoneNumber;
-            this.recordingDate = recordingDate;
+            Name = name;
+            Address = address;
+            PhoneNumber = phoneNumber;
+            RecordingDate = recordingDate;
             serialNumber++;
         }
 
@@ -43,10 +43,10 @@ namespace SerializerWindowsFormsApp
             file.Close();
 
             Console.WriteLine("Deserialize:");
-            Console.WriteLine("Name: {0}", objDeserialize.name);
-            Console.WriteLine("Address: {0}", objDeserialize.address);
-            Console.WriteLine("Phone number: {0}", objDeserialize.phoneNumber);
-            Console.WriteLine("Data recording: {0}", objDeserialize.recordingDate);
+            Console.WriteLine("Name: {0}", objDeserialize.Name);
+            Console.WriteLine("Address: {0}", objDeserialize.Address);
+            Console.WriteLine("Phone number: {0}", objDeserialize.PhoneNumber);
+            Console.WriteLine("Data recording: {0}", objDeserialize.RecordingDate);
             
             Console.ReadKey();
             return objDeserialize;
