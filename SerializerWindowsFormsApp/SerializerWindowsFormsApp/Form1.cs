@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace SerializerWindowsFormsApp
 {
     public partial class Form1 : Form
     {
-        //Person person = new Person();
-        DateTime recordingDate = new DateTime(1980, 8, 17);
-        Person person = new Person("John", "Budapest", "123-4567", new DateTime(1980, 8, 17));
+        List<Person> listOfPeople = new List<Person>();
 
         public Form1()
         {
@@ -16,9 +15,13 @@ namespace SerializerWindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string outputFileName = "person" + person.serialNumber + ".dat";
-            //MessageBox.Show(outputFileName);
+            DateTime recordingDate = DateTime.Now;
+            Person person = new Person(txtName.Text, txtAddress.Text, txtPhone.Text, recordingDate);
+            string outputFileName = "person" + Person.serialNumber + ".dat";
+            MessageBox.Show(outputFileName);
             person.Serialize(outputFileName);
+            listOfPeople.Add(person);
+            MessageBox.Show(listOfPeople.IndexOf(person).ToString());
         }
     }
 }

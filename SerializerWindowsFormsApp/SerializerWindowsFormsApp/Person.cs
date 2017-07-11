@@ -14,7 +14,7 @@ namespace SerializerWindowsFormsApp
         private string phoneNumber;
         public DateTime recordingDate;
         [NonSerialized]
-        public int serialNumber = 0;
+        public static int serialNumber = 0;
 
         public Person() { }
 
@@ -24,7 +24,7 @@ namespace SerializerWindowsFormsApp
             this.address = address;
             this.phoneNumber = phoneNumber;
             this.recordingDate = recordingDate;
-            this.serialNumber++;
+            serialNumber++;
         }
 
         public void Serialize(string outputFileName)
