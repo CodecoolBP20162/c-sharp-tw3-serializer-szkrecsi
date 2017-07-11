@@ -20,6 +20,8 @@ namespace SerializerWindowsFormsApp
             string outputFileName = "person" + Person.serialNumber + ".dat";
             person.Serialize(outputFileName);
             listOfPeople.Add(person);
+            txtName.Tag = person.RecordingDate;
+            MessageBox.Show(txtName.Tag.ToString());
             //MessageBox.Show(outputFileName);
             //MessageBox.Show(listOfPeople.IndexOf(person).ToString());
         }
@@ -40,22 +42,12 @@ namespace SerializerWindowsFormsApp
         {
             try
             {
-                Person firstPerson = listOfPeople[Person.serialNumber-1];
-                txtName.Text = firstPerson.Name;
-                txtAddress.Text = firstPerson.Address;
-                txtPhone.Text = firstPerson.PhoneNumber;
+                Person lastPerson = listOfPeople[Person.serialNumber-1];
+                txtName.Text = lastPerson.Name;
+                txtAddress.Text = lastPerson.Address;
+                txtPhone.Text = lastPerson.PhoneNumber;
             }
             catch (ArgumentOutOfRangeException exc) { }
-        }
-
-        private void btnPrevious_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
