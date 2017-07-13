@@ -32,23 +32,15 @@ namespace SerializerWindowsFormsApp
             Stream file = new FileStream(outputFileName, FileMode.Create, FileAccess.Write, FileShare.None);
             IFormatter formatter = new BinaryFormatter();
             formatter.Serialize(file, this);
-            file.Close();   
+            file.Close();
         }
 
         public static Person Deserialize(string inputFileName)
         {
-            Stream file = new FileStream("SerializeBinFile.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            Stream file = new FileStream(inputFileName, FileMode.Open, FileAccess.Read, FileShare.Read);
             IFormatter formatter = new BinaryFormatter();
             Person objDeserialize = (Person)formatter.Deserialize(file);
             file.Close();
-
-            Console.WriteLine("Deserialize:");
-            Console.WriteLine("Name: {0}", objDeserialize.Name);
-            Console.WriteLine("Address: {0}", objDeserialize.Address);
-            Console.WriteLine("Phone number: {0}", objDeserialize.PhoneNumber);
-            Console.WriteLine("Data recording: {0}", objDeserialize.RecordingDate);
-            
-            Console.ReadKey();
             return objDeserialize;
         }
 
